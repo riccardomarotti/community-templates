@@ -1,0 +1,13 @@
+[catalog.karere]
+name = "Karere"
+category = "chat"
+
+[templates.karere_native]
+input_path = "karere.css"
+output_path = "$XDG_CONFIG_HOME/karere/custom.css"
+requires_path = "$XDG_CONFIG_HOME/karere"
+
+[templates.karere_flatpak]
+input_path = "karere.css"
+output_path = "~/.var/app/io.github.tobagin.karere/config/karere/custom.css"
+requires_path = "~/.var/app/io.github.tobagin.karere"
