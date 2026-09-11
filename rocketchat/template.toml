@@ -1,0 +1,13 @@
+[catalog.rocketchat]
+name = "Rocket.Chat"
+category = "chat"
+
+[templates.rocketchat]
+input_path = "rocketchat.css"
+output_path = "$XDG_CONFIG_HOME/Rocket.Chat/custom.css"
+requires_path = "$XDG_CONFIG_HOME/Rocket.Chat"
+
+[templates.rocketchat-shell]
+input_path = "rocketchat-shell.css"
+output_path = "$XDG_CONFIG_HOME/Rocket.Chat/custom-shell.css"
+requires_path = "$XDG_CONFIG_HOME/Rocket.Chat"

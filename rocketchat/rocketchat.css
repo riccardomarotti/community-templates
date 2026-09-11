@@ -1,0 +1,93 @@
+/* Noctalia palette for Rocket.Chat Desktop */
+
+:root,
+html,
+body,
+#root,
+#app,
+.rcx-sidebar--main,
+.rcx-navbar {
+    /* Legacy Rocket.Chat palette */
+    --color-red: {{ colors.error.default.hex }} !important;
+    --color-yellow: {{ colors.secondary.default.hex }} !important;
+    --color-green: {{ colors.tertiary.default.hex }} !important;
+    --color-gray: {{ colors.outline.default.hex }} !important;
+    --color-gray-medium: {{ colors.outline_variant.default.hex }} !important;
+    --color-gray-lightest: {{ colors.surface_container.default.hex }} !important;
+    --rc-color-error: {{ colors.error.default.hex }} !important;
+    --rc-color-alert: {{ colors.secondary.default.hex }} !important;
+    --rc-color-success: {{ colors.tertiary.default.hex }} !important;
+    --rc-color-primary-light: {{ colors.primary.default.hex }} !important;
+    --content-background-color: {{ colors.surface.default.hex }} !important;
+    --primary-font-color: {{ colors.on_surface.default.hex }} !important;
+    --primary-action-color: {{ colors.primary.default.hex }} !important;
+    --secondary-font-color: {{ colors.on_surface_variant.default.hex }} !important;
+    --component-color: {{ colors.surface_container.default.hex }} !important;
+    --rc-status-online: {{ colors.tertiary.default.hex }} !important;
+    --rc-status-away: {{ colors.secondary.default.hex }} !important;
+    --rc-status-busy: {{ colors.error.default.hex }} !important;
+    --rc-status-invisible: {{ colors.outline_variant.default.hex }} !important;
+    --custom-scrollbar-color: {{ colors.outline.default.hex }} !important;
+
+    /* Rocket.Chat Fuselage palette */
+    --rcx-color-surface-tint: {{ colors.surface.default.hex }} !important;
+    --rcx-color-surface: {{ colors.surface.default.hex }} !important;
+    --rcx-color-surface-light: {{ colors.surface_container_lowest.default.hex }} !important;
+    --rcx-color-surface-neutral: {{ colors.surface_container.default.hex }} !important;
+    --rcx-color-surface-hover: {{ colors.surface_container_high.default.hex }} !important;
+    --rcx-color-surface-selected: {{ colors.primary_container.default.hex }} !important;
+    --rcx-color-surface-sidebar: {{ colors.surface_container_low.default.hex }} !important;
+    --rcx-color-surface-room: {{ colors.surface.default.hex }} !important;
+    --rcx-color-surface-overlay: {{ colors.scrim.default.hex }}99 !important;
+    --rcx-color-surface-disabled: {{ colors.surface_container_highest.default.hex }} !important;
+    --rcx-color-font-default: {{ colors.on_surface.default.hex }} !important;
+    --rcx-color-font-secondary-info: {{ colors.on_surface_variant.default.hex }} !important;
+    --rcx-color-font-disabled: {{ colors.outline.default.hex }} !important;
+    --rcx-color-font-titles-labels: {{ colors.on_surface.default.hex }} !important;
+    --rcx-color-font-annotation: {{ colors.on_surface_variant.default.hex }} !important;
+    --rcx-color-font-danger: {{ colors.error.default.hex }} !important;
+    --rcx-color-font-info: {{ colors.primary.default.hex }} !important;
+    --rcx-color-stroke-dark: {{ colors.outline.default.hex }} !important;
+    --rcx-color-stroke-medium: {{ colors.outline.default.hex }} !important;
+    --rcx-color-stroke-light: {{ colors.outline_variant.default.hex }} !important;
+    --rcx-color-stroke-extra-light: {{ colors.surface_container_high.default.hex }} !important;
+    --rcx-color-stroke-highlight: {{ colors.primary.default.hex }} !important;
+    --rcx-color-stroke-error: {{ colors.error.default.hex }} !important;
+
+    /* Buttons and badges */
+    --rcx-color-button-background-primary-default: {{ colors.primary.default.hex }} !important;
+    --rcx-color-button-background-primary-hover: {{ colors.primary_container.default.hex }} !important;
+    --rcx-color-button-background-primary-press: {{ colors.primary_container.default.hex }} !important;
+    --rcx-color-button-background-primary-focus: {{ colors.primary.default.hex }} !important;
+    --rcx-color-button-background-primary-disabled: {{ colors.surface_container_highest.default.hex }} !important;
+    --rcx-color-button-font-on-primary: {{ colors.on_primary.default.hex }} !important;
+    --rcx-color-button-background-secondary-default: {{ colors.surface_container.default.hex }} !important;
+    --rcx-color-button-background-secondary-hover: {{ colors.surface_container_high.default.hex }} !important;
+    --rcx-color-button-background-secondary-press: {{ colors.surface_container_highest.default.hex }} !important;
+    --rcx-color-button-font-on-secondary: {{ colors.on_surface.default.hex }} !important;
+    --rcx-color-badge-background-level-1: {{ colors.primary.default.hex }} !important;
+    --rcx-color-badge-background-level-2: {{ colors.secondary.default.hex }} !important;
+    --rcx-color-badge-background-level-3: {{ colors.tertiary.default.hex }} !important;
+    --rcx-color-badge-background-level-4: {{ colors.error.default.hex }} !important;
+}
+
+html,
+body,
+#root,
+#app {
+    background-color: {{ colors.surface.default.hex }} !important;
+    color: {{ colors.on_surface.default.hex }} !important;
+}
+
+.rcx-sidebar--main {
+    --sidebar-background: {{ colors.surface_container_low.default.hex }} !important;
+}
+
+a {
+    color: {{ colors.primary.default.hex }};
+}
+
+::selection {
+    background-color: {{ colors.primary.default.hex }};
+    color: {{ colors.on_primary.default.hex }};
+}
