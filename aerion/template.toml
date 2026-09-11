@@ -1,0 +1,13 @@
+[catalog.aerion]
+name = "Aerion"
+category = "misc"
+
+[templates.aerion_native]
+input_path = "aerion.css"
+output_path = "$XDG_CONFIG_HOME/aerion/custom.css"
+requires_path = "$XDG_CONFIG_HOME/aerion"
+
+[templates.aerion_flatpak]
+input_path = "aerion.css"
+output_path = "~/.var/app/io.github.hkdb.Aerion/config/aerion/custom.css"
+requires_path = "~/.var/app/io.github.hkdb.Aerion"

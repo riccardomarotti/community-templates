@@ -1,0 +1,54 @@
+/*
+ * Noctalia theme for Aerion
+ *
+ * Aerion consumes HSL components through declarations such as:
+ *   color: hsl(var(--foreground));
+ *
+ * Therefore the variables below intentionally contain raw HSL components
+ * rather than complete hsl(...) colors.
+ */
+
+:root,
+[data-theme] {
+    color-scheme: {{ mode }};
+
+    /* Main surfaces */
+    --background: {{ colors.surface.default.hue }} {{ colors.surface.default.saturation }}% {{ colors.surface.default.lightness }}%;
+    --foreground: {{ colors.on_surface.default.hue }} {{ colors.on_surface.default.saturation }}% {{ colors.on_surface.default.lightness }}%;
+
+    --card: {{ colors.surface_container_low.default.hue }} {{ colors.surface_container_low.default.saturation }}% {{ colors.surface_container_low.default.lightness }}%;
+    --card-foreground: {{ colors.on_surface.default.hue }} {{ colors.on_surface.default.saturation }}% {{ colors.on_surface.default.lightness }}%;
+
+    --popover: {{ colors.surface_container_high.default.hue }} {{ colors.surface_container_high.default.saturation }}% {{ colors.surface_container_high.default.lightness }}%;
+    --popover-foreground: {{ colors.on_surface.default.hue }} {{ colors.on_surface.default.saturation }}% {{ colors.on_surface.default.lightness }}%;
+
+    /* Primary / interactive */
+    --primary: {{ colors.primary.default.hue }} {{ colors.primary.default.saturation }}% {{ colors.primary.default.lightness }}%;
+    --primary-foreground: {{ colors.on_primary.default.hue }} {{ colors.on_primary.default.saturation }}% {{ colors.on_primary.default.lightness }}%;
+
+    /* Neutral secondary surfaces */
+    --secondary: {{ colors.surface_container.default.hue }} {{ colors.surface_container.default.saturation }}% {{ colors.surface_container.default.lightness }}%;
+    --secondary-foreground: {{ colors.on_surface.default.hue }} {{ colors.on_surface.default.saturation }}% {{ colors.on_surface.default.lightness }}%;
+
+    --muted: {{ colors.surface_container.default.hue }} {{ colors.surface_container.default.saturation }}% {{ colors.surface_container.default.lightness }}%;
+    --muted-foreground: {{ colors.on_surface_variant.default.hue }} {{ colors.on_surface_variant.default.saturation }}% {{ colors.on_surface_variant.default.lightness }}%;
+
+    /* Selection / accent */
+    --accent: {{ colors.secondary_container.default.hue }} {{ colors.secondary_container.default.saturation }}% {{ colors.secondary_container.default.lightness }}%;
+    --accent-foreground: {{ colors.on_secondary_container.default.hue }} {{ colors.on_secondary_container.default.saturation }}% {{ colors.on_secondary_container.default.lightness }}%;
+
+    /* Destructive actions */
+    --destructive: {{ colors.error.default.hue }} {{ colors.error.default.saturation }}% {{ colors.error.default.lightness }}%;
+    --destructive-foreground: {{ colors.on_error.default.hue }} {{ colors.on_error.default.saturation }}% {{ colors.on_error.default.lightness }}%;
+
+    /* Borders / focus */
+    --border: {{ colors.outline_variant.default.hue }} {{ colors.outline_variant.default.saturation }}% {{ colors.outline_variant.default.lightness }}%;
+    --input: {{ colors.outline_variant.default.hue }} {{ colors.outline_variant.default.saturation }}% {{ colors.outline_variant.default.lightness }}%;
+    --ring: {{ colors.primary.default.hue }} {{ colors.primary.default.saturation }}% {{ colors.primary.default.lightness }}%;
+
+    /*
+     * Aerion uses this optional numeric lightness override when rendering
+     * mail content in dark mode.
+     */
+    --dark-mail-bg-l: {{ colors.surface.default.lightness }};
+}
